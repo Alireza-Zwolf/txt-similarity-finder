@@ -49,7 +49,7 @@ bool Document :: check_repetition(const string &word , int &index){
         index = i;
         return false;
     }
-void Document :: sort_alphabetically(vector<Word*> &list){                          //check
+void Document :: sort_alphabetically(vector<Word*> &list){
         sort(list.begin(), list.end(), [](Word* a, Word* b) {
 		return a->name < b->name;
 	});
@@ -68,7 +68,7 @@ void Document :: omit_common_words(){
         for(int i = 0 ; i < words.size() ; i++){
             for(int j = 0 ; j < common_words.size() ; j++){
                 if(words[i]->name == common_words[j])
-                    words.erase(words.begin() + i);                         //check
+                    words.erase(words.begin() + i);
             }
         }
     }
