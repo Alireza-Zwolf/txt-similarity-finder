@@ -23,8 +23,6 @@ void Process:: find_similar_words(){
     }
 void Process:: process_words(Document* Doc_sample , int i , bool is_doc1){
         for(int j = 0 ; j < Doc_sample->get_words().size() ; j++){                            // O(n) ~ o(n^2)
-            //if(main_doc->get_words()[i]->name[0] != Doc_sample->get_words()[j]->name[0])
-            //    break;
             if(main_doc->get_words()[i]->name == Doc_sample->get_words()[j]->name){
                 double parameter_a = main_doc->get_words()[i]->count / main_doc->get_normalization_denominator();
                 double parameter_b = Doc_sample->get_words()[j]->count / Doc_sample->get_normalization_denominator();
