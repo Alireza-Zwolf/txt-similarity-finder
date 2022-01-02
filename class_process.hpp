@@ -9,7 +9,6 @@ using namespace std;
 class Process{
 private:
     Document* main_doc;
-    //vector<Document*> docs;
     Document* doc1;
     Document* doc2;
     double similarity_rate_doc1 = 0.0;
