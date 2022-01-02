@@ -7,7 +7,6 @@
 #include<vector>
 #include <bits/stdc++.h>
 #include <math.h>
-//#include "class_process.hpp"
 
 using namespace std;
 
